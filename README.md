@@ -28,6 +28,7 @@ At least one record is selected,
 User has agreed to terms and conditions
 
 Log In Credentials:
+
 User1:
 ID - admin1234
 PASS - 45$Qr87$482d
