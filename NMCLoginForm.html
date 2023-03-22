@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" >	<!-- for media queries -->
+	<title>Log In</title>
+	<link href="NMCStyling.css" rel="stylesheet">  <!-- linking css file -->
+</head>
+
+<body>
+
+	<form method="post" action="NMCLoginProcess.php" class="login"> <!-- login form, linking to php file -->
+		<h3>Enter Login Information</h3>
+		<div class="fields">
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username" maxlength="25" class="login__input" placeholder="Enter Username" accesskey="u" required> <!-- username field -->
+		</div>
+		<div class="fields">
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" maxlength="25" class="login__input" placeholder=" Enter Password" accesskey="p" required>	<!-- password field -->
+		</div>
+		<div class="buttons">
+			<input type="submit" name="submitbutton" value="Log In">	<!-- log in button -->
+		</div>
+	</form>
+	
+	<a class="HomePageButtonStyle" href='NMCHomePage.html'> Home Page </a>	<!-- Back to home page button -->
+</body>
+</html>
+

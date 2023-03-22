@@ -1,0 +1,132 @@
+/*------------------------------------CSS for Home Page----------------------------------------*/
+.gridContainer {
+		display: grid;
+		grid-gap: 10px;									/* setting a 10 pixel gap between grid cells*/
+		grid-template-rows: auto;						/* setting height of rows to whatever the height of the content is*/
+		grid-template-columns: 0.7fr 1.5fr 1.5fr;		/* setting width of the columns*/
+		grid-template-areas:
+			"header header nav"							/* setting 3 columns, 3 rows*/
+			"main main aside"
+			"footer footer footer";
+		}
+
+			/* assigning HTML items into the named grid template areas*/
+			header {
+				grid-area:header;
+				text-align: center;
+				list-style-type: none;
+				background-color: gray;		/* setting gray background color */
+				
+			}
+
+			nav {
+				grid-area:nav;
+				font-family: arial;			/* setting arial font */
+				text-align: center;			/* alligning text to centre */
+				background-color: gray;		/* setting gray background color */
+			}
+
+			main{
+				grid-area:main;
+				background-color: white;	/* setting white background color */
+				font-family: arial;			/* setting arial font */
+
+			}
+
+			aside {
+				grid-area: aside;
+				background-color:gray;		/* setting gray background color */
+				font-family: arial;			/* setting arial font */
+				text-align: center;			/* alligning text to centre */
+			}
+
+			footer {
+				grid-area:footer;
+				color: white;				/* setting color of text to white */
+				font-family: arial;			/* setting arial font */
+				background-color: gray;		/* setting red background color */
+				font-weight: bold;			/* setting font to bold */
+			}
+			
+			
+.gridContainerCredits {									/* grid container for credits page */
+		display: grid;
+		grid-gap: 10px;									/* setting a 10 pixel gap between grid cells*/
+		grid-template-rows: auto;						/* setting height of rows to whatever the height of the content is*/
+		grid-template-columns: 0.7fr 1.5fr 1.5fr;		/* setting width of the columns*/
+		grid-template-areas:
+			"header header nav"							/* setting 3 columns, 2 rows*/
+			"main main main";
+		}
+
+			/* assigning HTML items into the named grid template areas*/
+			header {
+				grid-area:header;
+				text-align: center;			/* setting text allignment to center */
+				list-style-type: none;		/* setting list style to normal */
+				background-color: gray;		/* setting gray background color */
+				
+			}
+
+			nav {
+				grid-area:nav;
+				font-family: arial;			/* setting arial font */
+				text-align: center;			/* alligning text to centre */
+				background-color: gray;		/* setting gray background color */
+			}
+
+			main{
+				grid-area:main;
+				background-color: white;	/* setting white background color */
+				font-family: arial;			/* setting arial font */
+
+			}
+
+/*------------------------------------End of CSS for Home Page----------------------------------------*/
+
+/* General styling */
+body {
+	background: white;	
+	font-family: arial;			 
+}
+
+.HomePageButtonStyle {		/* styling home page button */
+	position:absolute;
+	top: 8px;				/* positioning */
+    right:11px;
+    text-align:right;
+}
+
+.LogOutButtonStyle {		/* styling log out button */
+	position:absolute;
+	top: 30px;				/* positioning */
+    right:11px;
+    text-align:right;
+}
+/* End of General styling */
+
+
+/*------------------------------------CSS for Navigation Bar ----------------------------------------*/
+ul {								/* Styling navigation list*/
+	list-style: none;				/* removing bullet points */
+	width: 100%;
+	background-color: gray;			/* setting color to gray */
+	padding: 0px;
+}
+
+li a {								/* Styling navigation list "buttons" */
+	display: block;
+	color: white;					/* setting list text color to white */
+	text-decoration: none;			
+	padding: 8px 16px;
+}
+	
+li a:hover {						/* Styling navigation once hovered on*/
+	text-decoration: underline;		/* Underlining text if hovered on */
+}
+	
+li a.current{						/* Styling navigation once selected on*/
+	color: black; 					/* Changing color of text if specific page is selected */
+}
+
+/*------------------------------------End of CSS for Navigation Bar ----------------------------------------*/

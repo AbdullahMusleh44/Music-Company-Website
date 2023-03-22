@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" >	<!-- for media queries -->
+	<title>Home Page</title>
+	<link href="NMCStyling.css" rel="stylesheet">  <!-- linking css file -->
+</head>
+
+<body>
+	<div class="gridContainer">  <!-- creating grid layout container -->
+	
+		<header>
+			<h1>Northumbria Music Company </h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a class="current" href="Home.html">Home</a></li> 										<!-- Navigation Bar -->
+				<li><a href="orderRecordsForm.php">Order Records </a></li>
+				<li><a href="NMCLoginForm.html">Administrator Log In </a></li>
+				<li><a href="NMCCredits.html">Credits</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<h2> About Us</h2>
+				<p> The Northumbria Music Company was established in 2003 out of Newcastle, England. With a vision of providing the best vinyl records,
+				in the cheapest possible prices.</p>		
+		</main>
+			
+		<aside>	<!-- Aside section-->
+			<h2> Special offers </h2>
+            <div id="offers"> Offers displayed here </div> <!-- AJAX to be used here -->
+		</aside>
+
+		<footer> 
+			<h2> Contact Us! </h2>
+			<p> Newcastle Store Location: NE1 7DF </p>
+			<p> Working Hours: 9AM - 5PM (Monday-Saturday) </p>
+			<p> Email: info@nmc.com </p>							<!-- Contact information for footer -->
+			<p> Telephone: 447470303303 </p>
+		</footer>
+
+	</div>
+	<script  src="NMCOffers.js"></script>	<!-- Connecting Javascript file -->
+</body>
+</html>
