@@ -37,3 +37,5 @@ User2:
 ID - ADMIN1235
 PASS - 29t$tGf2583#
 
+Website can be accessed through: http://unn-w21006726.newnumyspace.co.uk/NMCHomePage.html
+(Please refrain from adding innapropriate additions when testing the website!)
